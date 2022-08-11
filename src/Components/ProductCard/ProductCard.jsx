@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
+import { CartContext } from "../../Context/CartContext";
 import "./ProductCard.css";
 
 const ProductCard = (props) => {
+  const { addToCart } = useContext(CartContext);
+
   const { product } = props;
-  console.log(product);
+  
   const { category, id, price, title, rating, image } = product;
   return (
     <div className="ProductCard-wrapper">
@@ -15,7 +18,14 @@ const ProductCard = (props) => {
       <p className="ProductCard-title">{title}</p>
       <p className="ProductCard-price"> Rs.{price}</p>
       <p className="ProductCard-rating">{rating.rate}</p>
-      <button className="ProductCard-button">Add to cart</button>
+      <button
+        onClick={() => {
+          addToCart(product);
+        }}
+        className="ProductCard-button"
+      >
+        Add to cart
+      </button>
     </div>
   );
 };
