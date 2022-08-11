@@ -20,3 +20,10 @@
 .Cart-nav-link{
     position:relative
 }
+
+.Cart-nav-link span{
+    position: absolute;
+    top: -10px;
+    right: 5px;
+  }
+  

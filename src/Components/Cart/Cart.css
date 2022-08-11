@@ -1,7 +1,7 @@
 .Cart-wrapper{
     display:flex;
     flex-direction: column;
-    margin: 4px 0px 0px 0px;
+    margin: 40px 0px 0px 0px;
 }
 
 .Cart-item-wrapper{
@@ -36,22 +36,20 @@
     display:flex;
     
 }
-
+.Cart-quantity-wrapper p{
+    padding: 0 10px;
+  }
 .Cart-title{
-    display: inline-block;
-     margin-bottom: -70px;
-    text-align:center;
-     text-decoration: none;
-   text-overflow: ellipsis;
-   -o-text-overflow: ellipsis;
-   -webkit-text-overflow: ellipsis;
-   overflow: hidden;
-   width: 100px;
-   height: 100px;
-   white-space: nowrap
+    width: 75%;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
    }
 
 .loading{
-    
-    display: none;
+  display:block;
+  margin:auto;  
+  font-size: 24px;
+  font-weight: bold;
+
 }
