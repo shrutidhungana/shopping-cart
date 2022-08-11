@@ -1,15 +1,25 @@
 .ProductCard-wrapper {
   border: 1px solid black;
   border-radius: 10px;
-  margin: 10px;
+  padding: 0.5em;
+  width: 100px;
+  min-width: 300px;
+  text-align: left;
 }
 
 .ProductCard-image {
-  max-width: 700px;
+  display: flex;
   width: auto;
-  max-height: 700px;
+  height: 200px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.ProductCard-image > img {
+  width: 100%;
   height: auto;
-  /* object-position: top center; */
+  object-fit: cover;
 }
 
 .ProductCard-category {
@@ -39,4 +49,15 @@
   padding: 5px;
   border-radius: 50px;
   font-size: 14px;
+}
+
+@media (max-width: 650px) {
+  .ProductCard-wrapper {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0.5em;
+    width: 100px;
+    min-width: 300px;
+    text-align: left;
+  }
 }

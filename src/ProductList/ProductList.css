@@ -1,15 +1,22 @@
-.Products-wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1024px;
-    width: 80%;
-    margin: 70px auto 0;
-    gap: 12px;
+.Products-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  gap: 1rem;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.Loading {
+  display: block;
+  margin: auto;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.Loading{
-    display:block;
-    margin:auto;
-    font-size: 24px;
-    font-weight: bold;
+@media (max-width: 650px) {
+  .Products-wrapper {
+    display: grid;
+    grid-template-columns: 350px;
+    gap: 1rem;
+  }
 }
