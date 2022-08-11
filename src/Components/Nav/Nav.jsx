@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import './Nav.css'
 
 const Nav = () => {
   return (
     <div>
-      <ul>
+      <ul className = "Nav-wrapper">
         <li>
           <Link to="/">Home</Link>
         </li>
