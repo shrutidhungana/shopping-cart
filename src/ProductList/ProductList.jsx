@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ProductCard from "../Components/ProductCard/ProductCard";
+import './ProductList.css'
 
 const ProductList = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -20,9 +21,9 @@ const ProductList = () => {
     getProducts();
   }, []);
   return (
-    <div>
+    <div className = "Products-wrapper">
       {isLoading ? (
-        <div>Fetching data! Please wait</div>
+        <div className = "Loading">Fetching data! Please wait</div>
       ) : (
         products.map((product, index) => (
           <ProductCard product={product} key={`${index}${product.id}`} />

@@ -1,0 +1,42 @@
+.ProductCard-wrapper {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.ProductCard-image {
+  max-width: 700px;
+  width: auto;
+  max-height: 700px;
+  height: auto;
+  /* object-position: top center; */
+}
+
+.ProductCard-category {
+  font-weight: bolder;
+  color: green;
+}
+
+.ProductCard-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000800;
+}
+
+.ProductCard-price {
+  font-size: 20px;
+  color: orange;
+}
+
+.ProductCard-rating {
+  font-size: 16px;
+}
+
+.ProductCard-button {
+  background-color: #ff8c00;
+  border: 3px solid #ff8c00;
+  width: 100px;
+  padding: 5px;
+  border-radius: 50px;
+  font-size: 14px;
+}
