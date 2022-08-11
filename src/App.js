@@ -1,9 +1,12 @@
 
 import React from 'react'
+import AppRouter from './AppRouter/AppRouter'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <AppRouter />
+    </div>
   )
 }
 
