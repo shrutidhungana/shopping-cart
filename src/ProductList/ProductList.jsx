@@ -1,9 +1,35 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
+import ProductCard from "../Components/ProductCard/ProductCard";
 
 const ProductList = () => {
-  return (
-    <div>ProductList</div>
-  )
-}
+  const [isLoading, setIsLoading] = useState(false);
+  const [products, setProducts] = useState([]);
 
-export default ProductList
+  useEffect(() => {
+    setIsLoading(true);
+
+    async function getProducts() {
+      const response = await fetch("https://fakestoreapi.com/products");
+      const products = await response.json();
+
+      if (products && products.length > 0) {
+        setProducts(products);
+        setIsLoading(false);
+      }
+    }
+    getProducts();
+  }, []);
+  return (
+    <div>
+      {isLoading ? (
+        <div>Fetching data! Please wait</div>
+      ) : (
+        products.map((product, index) => (
+          <ProductCard product={product} key={`${index}${product.id}`} />
+        ))
+      )}
+    </div>
+  );
+};
+
+export default ProductList;
