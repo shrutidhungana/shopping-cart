@@ -16,7 +16,7 @@ const ProductCard = (props) => {
       <p className="ProductCard-id">{id}</p>
       <p className="ProductCard-category">{category}</p>
       <p className="ProductCard-title">{title}</p>
-      <p className="ProductCard-price"> Rs.{price}</p>
+      <p className="ProductCard-price"> ${price}</p>
       <p className="ProductCard-rating">{rating.rate}</p>
       <button
         onClick={() => {
