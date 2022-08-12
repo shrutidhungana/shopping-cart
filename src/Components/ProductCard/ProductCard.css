@@ -1,5 +1,5 @@
 .ProductCard-wrapper {
-  border: 1px solid black;
+  border: 1px solid gray;
   border-radius: 10px;
   padding: 0.5em;
   width: 100px;
@@ -32,9 +32,9 @@
   font-weight: bold;
   color: #000800;
   overflow:hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-
+ white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 95%;
 }
 
 .ProductCard-price {
@@ -65,5 +65,3 @@
     text-align: left;
   }
 }
-
-

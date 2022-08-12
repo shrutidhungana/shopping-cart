@@ -11,8 +11,8 @@ const ProductCard = (props) => {
   return (
     <div className="ProductCard-wrapper">
       <div className="ProductCard-image">
-        <img src={image} alt="Product" />
-      </div>
+      <img /*className="ProductCard-image"*/ src={image} alt="Product" />
+    </div>
       <p className="ProductCard-id">{id}</p>
       <p className="ProductCard-category">{category}</p>
       <p className="ProductCard-title">{title}</p>
