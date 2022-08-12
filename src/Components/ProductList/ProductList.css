@@ -13,4 +13,14 @@
   font-weight: bold;
 }
 
-
+@media(max-width:650px){
+  .Products-wrapper{
+    display: grid;
+    grid-template-columns: 350px;
+    max-width: 1024px;
+    width: 80%;
+    margin: 70px auto 0;
+    gap: 12px;
+  
+  }
+}

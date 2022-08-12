@@ -1,6 +1,6 @@
 .ProductCard-wrapper {
   border: 1px solid gray;
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 0.5em;
   width: 100px;
   min-width: 300px;
@@ -65,3 +65,4 @@
     text-align: left;
   }
 }
+
